@@ -1,11 +1,11 @@
-import { Router } from "express";
-import Category from "model/Category";
+import { Router } from 'express';
+import Category from 'model/Category';
 
 const categoriesRoutes = Router();
 
 const categories: Category[] = [];
 
-categoriesRoutes.post("/", (request, response) => {
+categoriesRoutes.post('/', (request, response) => {
   const { name, description } = request.body;
 
   const category = new Category();
